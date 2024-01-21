@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opencontainers/runc/libcontainer/capabilities"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/seccomp"
-	"github.com/opencontainers/runc/libcontainer/specconv"
-	runcfeatures "github.com/opencontainers/runc/types/features"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/opencontainers/runtime-spec/specs-go/features"
+	"github.com/szcdx/runc/libcontainer/capabilities"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/seccomp"
+	"github.com/szcdx/runc/libcontainer/specconv"
+	runcfeatures "github.com/szcdx/runc/types/features"
 	"github.com/urfave/cli"
 )
 

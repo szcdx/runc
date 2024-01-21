@@ -15,8 +15,8 @@ import (
 	dbus "github.com/godbus/dbus/v5"
 	"github.com/sirupsen/logrus"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 const (
@@ -140,7 +140,7 @@ retry:
 		if ignoreExist {
 			// TODO: remove this hack.
 			// This is kubelet making sure a slice exists (see
-			// https://github.com/opencontainers/runc/pull/1124).
+			// https://github.com/szcdx/runc/pull/1124).
 			return nil
 		}
 		if retry {

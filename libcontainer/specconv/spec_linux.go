@@ -14,14 +14,14 @@ import (
 
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/devices"
-	"github.com/opencontainers/runc/libcontainer/seccomp"
-	"github.com/opencontainers/runc/libcontainer/userns"
-	libcontainerUtils "github.com/opencontainers/runc/libcontainer/utils"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/devices"
+	"github.com/szcdx/runc/libcontainer/seccomp"
+	"github.com/szcdx/runc/libcontainer/userns"
+	libcontainerUtils "github.com/szcdx/runc/libcontainer/utils"
 
 	"golang.org/x/sys/unix"
 )
@@ -69,7 +69,7 @@ func initMaps() {
 			clear bool
 			flag  int
 		}{
-			// "acl" cannot be mapped to MS_POSIXACL: https://github.com/opencontainers/runc/issues/3738
+			// "acl" cannot be mapped to MS_POSIXACL: https://github.com/szcdx/runc/issues/3738
 			"async":         {true, unix.MS_SYNCHRONOUS},
 			"atime":         {true, unix.MS_NOATIME},
 			"bind":          {false, unix.MS_BIND},
@@ -1027,7 +1027,7 @@ func setupUserNamespace(spec *specs.Spec, config *configs.Config) error {
 				!userns.IsSameMapping(gidMap, config.GIDMappings) {
 				return errors.New("user namespaces enabled, but both namespace path and non-matching mapping specified -- you may only provide one")
 			}
-			logrus.Warnf("config.json has both a userns path to join and a matching userns mapping specified -- you may only provide one. Future versions of runc may return an error with this configuration, please report a bug on <https://github.com/opencontainers/runc> if you see this warning and cannot update your configuration.")
+			logrus.Warnf("config.json has both a userns path to join and a matching userns mapping specified -- you may only provide one. Future versions of runc may return an error with this configuration, please report a bug on <https://github.com/szcdx/runc> if you see this warning and cannot update your configuration.")
 		}
 
 		config.UIDMappings = uidMap

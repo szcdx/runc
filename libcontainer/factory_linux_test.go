@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/utils"
 	"github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/utils"
 )
 
 func TestFactoryLoadNotExists(t *testing.T) {

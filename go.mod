@@ -1,4 +1,4 @@
-module github.com/opencontainers/runc
+module github.com/szcdx/runc
 
 go 1.20
 

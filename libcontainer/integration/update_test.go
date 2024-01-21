@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/cgroups/systemd"
-	"github.com/opencontainers/runc/libcontainer/devices"
+	"github.com/szcdx/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer/cgroups/systemd"
+	"github.com/szcdx/runc/libcontainer/devices"
 )
 
 func testUpdateDevices(t *testing.T, systemd bool) {

@@ -11,7 +11,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 type Mapping struct {

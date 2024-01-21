@@ -126,7 +126,7 @@ function teardown() {
 	[ "$status" -eq 0 ]
 }
 
-# https://github.com/opencontainers/runc/issues/3551
+# https://github.com/szcdx/runc/issues/3551
 @test "runc exec vs systemctl daemon-reload" {
 	requires systemd root
 

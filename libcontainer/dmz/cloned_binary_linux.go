@@ -10,7 +10,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer/system"
+	"github.com/szcdx/runc/libcontainer/system"
 )
 
 type SealFunc func(**os.File) error

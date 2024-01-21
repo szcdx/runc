@@ -5,9 +5,9 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/devices"
-	"github.com/opencontainers/runc/libcontainer/userns"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/devices"
+	"github.com/szcdx/runc/libcontainer/userns"
 )
 
 func isRWM(perms devices.Permissions) bool {

@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer"
 	//nolint:revive // Enable cgroup manager to manage devices
-	_ "github.com/opencontainers/runc/libcontainer/cgroups/devices"
-	_ "github.com/opencontainers/runc/libcontainer/nsenter"
+	_ "github.com/szcdx/runc/libcontainer/cgroups/devices"
+	_ "github.com/szcdx/runc/libcontainer/nsenter"
 )
 
 // Same as ../../init.go but for libcontainer/integration.

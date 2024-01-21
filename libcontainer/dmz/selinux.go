@@ -2,7 +2,7 @@
 
 package dmz
 
-import "github.com/opencontainers/runc/libcontainer/configs"
+import "github.com/szcdx/runc/libcontainer/configs"
 
 // WorksWithSELinux tells whether runc-dmz can work with SELinux.
 func WorksWithSELinux(*configs.Config) bool {

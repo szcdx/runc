@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/opencontainers/runc/libcontainer/utils"
 	"github.com/sirupsen/logrus"
+	"github.com/szcdx/runc/libcontainer/utils"
 	"golang.org/x/sys/unix"
 )
 

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/szcdx/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer/utils"
 	"github.com/urfave/cli"
 )
 

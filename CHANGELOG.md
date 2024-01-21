@@ -142,9 +142,9 @@ The following CVEs were fixed in this release:
   as in [CVE-2023-27561][]. This was reported by Lei Wang.
 
 [CVE-2019-19921]: https://github.com/advisories/GHSA-fh74-hm69-rqjw
-[CVE-2023-25809]: https://github.com/opencontainers/runc/security/advisories/GHSA-m8cg-xc2p-r3fc
+[CVE-2023-25809]: https://github.com/szcdx/runc/security/advisories/GHSA-m8cg-xc2p-r3fc
 [CVE-2023-27561]: https://github.com/advisories/GHSA-vpvm-3wq2-2wvm
-[CVE-2023-28642]: https://github.com/opencontainers/runc/security/advisories/GHSA-g2j6-57v7-gm8c
+[CVE-2023-28642]: https://github.com/szcdx/runc/security/advisories/GHSA-g2j6-57v7-gm8c
 
 ### Fixed
 
@@ -214,7 +214,7 @@ The following CVEs were fixed in this release:
  * `runc spec` no longer sets any inheritable capabilities in the created
    example OCI spec (`config.json`) file.
 
-[GHSA-f3fp-gc8g-vw66]: https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66
+[GHSA-f3fp-gc8g-vw66]: https://github.com/szcdx/runc/security/advisories/GHSA-f3fp-gc8g-vw66
 
 
 ## [1.1.1] - 2022-03-28
@@ -370,7 +370,7 @@ The following CVEs were fixed in this release:
  * Improved an error message when dbus-user-session is not installed and
    rootless + cgroup2 + systemd are used. (#3212)
 
-[GHSA-v95c-p5hm-xq8f]: https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f
+[GHSA-v95c-p5hm-xq8f]: https://github.com/szcdx/runc/security/advisories/GHSA-v95c-p5hm-xq8f
 
 
 ## [1.0.2] - 2021-07-16
@@ -465,24 +465,24 @@ implementation (libcontainer) is *not* covered by this policy.
    cgroups at all during `runc update`). (#2994)
 
 <!-- minor releases -->
-[Unreleased]: https://github.com/opencontainers/runc/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/opencontainers/runc/compare/v1.1.0-rc.1...v1.1.0
-[1.0.0]: https://github.com/opencontainers/runc/releases/tag/v1.0.0
+[Unreleased]: https://github.com/szcdx/runc/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/szcdx/runc/compare/v1.1.0-rc.1...v1.1.0
+[1.0.0]: https://github.com/szcdx/runc/releases/tag/v1.0.0
 
 <!-- 1.0.z patch releases -->
-[Unreleased 1.0.z]: https://github.com/opencontainers/runc/compare/v1.0.3...release-1.0
-[1.0.3]: https://github.com/opencontainers/runc/compare/v1.0.2...v1.0.3
-[1.0.2]: https://github.com/opencontainers/runc/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/opencontainers/runc/compare/v1.0.0...v1.0.1
+[Unreleased 1.0.z]: https://github.com/szcdx/runc/compare/v1.0.3...release-1.0
+[1.0.3]: https://github.com/szcdx/runc/compare/v1.0.2...v1.0.3
+[1.0.2]: https://github.com/szcdx/runc/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/szcdx/runc/compare/v1.0.0...v1.0.1
 
 <!-- 1.1.z patch releases -->
-[Unreleased 1.1.z]: https://github.com/opencontainers/runc/compare/v1.1.8...release-1.1
-[1.1.8]: https://github.com/opencontainers/runc/compare/v1.1.7...v1.1.8
-[1.1.7]: https://github.com/opencontainers/runc/compare/v1.1.6...v1.1.7
-[1.1.6]: https://github.com/opencontainers/runc/compare/v1.1.5...v1.1.6
-[1.1.5]: https://github.com/opencontainers/runc/compare/v1.1.4...v1.1.5
-[1.1.4]: https://github.com/opencontainers/runc/compare/v1.1.3...v1.1.4
-[1.1.3]: https://github.com/opencontainers/runc/compare/v1.1.2...v1.1.3
-[1.1.2]: https://github.com/opencontainers/runc/compare/v1.1.1...v1.1.2
-[1.1.1]: https://github.com/opencontainers/runc/compare/v1.1.0...v1.1.1
-[1.1.0-rc.1]: https://github.com/opencontainers/runc/compare/v1.0.0...v1.1.0-rc.1
+[Unreleased 1.1.z]: https://github.com/szcdx/runc/compare/v1.1.8...release-1.1
+[1.1.8]: https://github.com/szcdx/runc/compare/v1.1.7...v1.1.8
+[1.1.7]: https://github.com/szcdx/runc/compare/v1.1.6...v1.1.7
+[1.1.6]: https://github.com/szcdx/runc/compare/v1.1.5...v1.1.6
+[1.1.5]: https://github.com/szcdx/runc/compare/v1.1.4...v1.1.5
+[1.1.4]: https://github.com/szcdx/runc/compare/v1.1.3...v1.1.4
+[1.1.3]: https://github.com/szcdx/runc/compare/v1.1.2...v1.1.3
+[1.1.2]: https://github.com/szcdx/runc/compare/v1.1.1...v1.1.2
+[1.1.1]: https://github.com/szcdx/runc/compare/v1.1.0...v1.1.1
+[1.1.0-rc.1]: https://github.com/szcdx/runc/compare/v1.0.0...v1.1.0-rc.1

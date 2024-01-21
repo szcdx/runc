@@ -3,7 +3,7 @@ package cgroups
 import (
 	"errors"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 var (

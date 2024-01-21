@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/opencontainers/runc/libcontainer"
-	_ "github.com/opencontainers/runc/libcontainer/nsenter"
+	"github.com/szcdx/runc/libcontainer"
+	_ "github.com/szcdx/runc/libcontainer/nsenter"
 )
 
 func init() {

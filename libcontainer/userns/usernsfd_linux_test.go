@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 func BenchmarkSpawnProc(b *testing.B) {

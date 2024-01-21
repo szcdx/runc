@@ -21,13 +21,13 @@ import (
 	"golang.org/x/sys/execabs"
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/dmz"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
-	"github.com/opencontainers/runc/libcontainer/system"
-	"github.com/opencontainers/runc/libcontainer/system/kernelversion"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/dmz"
+	"github.com/szcdx/runc/libcontainer/intelrdt"
+	"github.com/szcdx/runc/libcontainer/system"
+	"github.com/szcdx/runc/libcontainer/system/kernelversion"
+	"github.com/szcdx/runc/libcontainer/utils"
 )
 
 const stdioFdCount = 3

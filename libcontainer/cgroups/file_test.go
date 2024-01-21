@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opencontainers/runc/internal/testutil"
+	"github.com/szcdx/runc/internal/testutil"
 )
 
 func TestWriteCgroupFileHandlesInterrupt(t *testing.T) {

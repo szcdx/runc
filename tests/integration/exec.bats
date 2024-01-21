@@ -128,7 +128,7 @@ function teardown() {
 	[[ "${output}" == "uid=1000 gid=1000"* ]]
 }
 
-# https://github.com/opencontainers/runc/issues/3674.
+# https://github.com/szcdx/runc/issues/3674.
 @test "runc exec --user vs /dev/null ownership" {
 	requires root
 

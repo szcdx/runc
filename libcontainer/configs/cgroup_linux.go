@@ -2,7 +2,7 @@ package configs
 
 import (
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
-	"github.com/opencontainers/runc/libcontainer/devices"
+	"github.com/szcdx/runc/libcontainer/devices"
 )
 
 type FreezerState string

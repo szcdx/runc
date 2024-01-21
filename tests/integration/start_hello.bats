@@ -37,7 +37,7 @@ function teardown() {
 	[[ "${output}" == *"Hello"* ]]
 }
 
-# https://github.com/opencontainers/runc/issues/3715.
+# https://github.com/szcdx/runc/issues/3715.
 #
 # Fails when using Go 1.20 < 1.20.2, the reasons is https://go.dev/issue/58552.
 @test "runc run as user with no exec bit but CAP_DAC_OVERRIDE set" {
@@ -90,7 +90,7 @@ function teardown() {
 	[[ "$(cat pid.txt)" =~ [0-9]+ ]]
 }
 
-# https://github.com/opencontainers/runc/pull/2897
+# https://github.com/szcdx/runc/pull/2897
 @test "runc run [rootless with host pidns]" {
 	requires rootless_no_features
 

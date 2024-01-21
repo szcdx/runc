@@ -368,7 +368,7 @@ function rootless_cgroup() {
 function have_criu() {
 	command -v criu &>/dev/null || return 1
 
-	# Workaround for https://github.com/opencontainers/runc/issues/3532.
+	# Workaround for https://github.com/szcdx/runc/issues/3532.
 	local ver
 	ver=$(rpm -q criu 2>/dev/null || true)
 	run ! grep -q '^criu-3\.17-[123]\.el9' <<<"$ver"

@@ -308,7 +308,7 @@ to return).
 > detached pass-through will result in the container hanging if the `stdout` or
 > `stderr` is a pipe (though this should be a temporary issue).
 
-[issue-1721]: https://github.com/opencontainers/runc/issues/1721
+[issue-1721]: https://github.com/szcdx/runc/issues/1721
 
 #### Detached New Terminal ####
 

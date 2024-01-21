@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/configs"
 
 	libseccomp "github.com/seccomp/libseccomp-golang"
 	"golang.org/x/net/bpf"

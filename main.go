@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/seccomp"
 	"github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/szcdx/runc/libcontainer/seccomp"
 
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
@@ -184,7 +184,7 @@ func configLogrus(context *cli.Context) error {
 		logrus.SetLevel(logrus.DebugLevel)
 		logrus.SetReportCaller(true)
 		// Shorten function and file names reported by the logger, by
-		// trimming common "github.com/opencontainers/runc" prefix.
+		// trimming common "github.com/szcdx/runc" prefix.
 		// This is only done for text formatter.
 		_, file, _, _ := runtime.Caller(0)
 		prefix := filepath.Dir(file) + "/"

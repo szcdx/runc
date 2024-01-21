@@ -222,7 +222,7 @@ EOF
 	check_systemd_value "TasksMax" 20
 
 	if [ "$HAVE_SWAP" = "yes" ]; then
-		# Test case for https://github.com/opencontainers/runc/pull/592,
+		# Test case for https://github.com/szcdx/runc/pull/592,
 		# checking libcontainer/cgroups/fs/memory.go:setMemoryAndSwap.
 
 		runc update test_update --memory 30M --memory-swap 50M
@@ -482,7 +482,7 @@ EOF
 		check_cgroup_value "cpu.idle" "1"
 	done
 
-	# https://github.com/opencontainers/runc/issues/3786
+	# https://github.com/szcdx/runc/issues/3786
 	[ "$(systemd_version)" -ge 252 ] && return
 	# test update other option won't impact on cpu.idle
 	runc update --cpu-period 10000 test_update

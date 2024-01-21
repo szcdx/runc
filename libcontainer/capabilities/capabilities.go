@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/sirupsen/logrus"
 	"github.com/syndtr/gocapability/capability"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 const allCapabilityTypes = capability.CAPS | capability.BOUNDING | capability.AMBIENT

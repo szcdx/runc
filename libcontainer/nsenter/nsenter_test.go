@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer"
 	"github.com/vishvananda/netlink/nl"
 	"golang.org/x/sys/unix"
 )

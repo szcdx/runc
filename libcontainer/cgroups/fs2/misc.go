@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fscommon"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/cgroups/fscommon"
 )
 
 func statMisc(dirPath string, stats *cgroups.Stats) error {

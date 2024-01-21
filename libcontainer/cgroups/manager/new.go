@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fs"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fs2"
-	"github.com/opencontainers/runc/libcontainer/cgroups/systemd"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/cgroups/fs"
+	"github.com/szcdx/runc/libcontainer/cgroups/fs2"
+	"github.com/szcdx/runc/libcontainer/cgroups/systemd"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 // New returns the instance of a cgroup manager, which is chosen

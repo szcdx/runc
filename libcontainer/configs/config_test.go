@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 func TestUnmarshalHooks(t *testing.T) {

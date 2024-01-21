@@ -7,8 +7,8 @@ The following features are not implemented yet:
 
 Spec version | Feature                                  | PR
 -------------|------------------------------------------|----------------------------------------------------------
-v1.1.0       | `SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV` | [#3862](https://github.com/opencontainers/runc/pull/3862)
-v1.1.0       | `.process.ioPriority`                    | [#3783](https://github.com/opencontainers/runc/pull/3783)
+v1.1.0       | `SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV` | [#3862](https://github.com/szcdx/runc/pull/3862)
+v1.1.0       | `.process.ioPriority`                    | [#3783](https://github.com/szcdx/runc/pull/3783)
 
 ## Architectures
 

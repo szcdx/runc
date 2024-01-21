@@ -10,7 +10,7 @@ function teardown() {
 	teardown_bundle
 }
 
-# Test case for https://github.com/opencontainers/runc/pull/2086
+# Test case for https://github.com/szcdx/runc/pull/2086
 @test "runc exec --user with no access to cwd" {
 	requires root
 

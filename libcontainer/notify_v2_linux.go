@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"unsafe"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/fscommon"
 	"github.com/sirupsen/logrus"
+	"github.com/szcdx/runc/libcontainer/cgroups/fscommon"
 	"golang.org/x/sys/unix"
 )
 

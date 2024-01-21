@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer/dmz"
+	"github.com/szcdx/runc/libcontainer/dmz"
 
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"

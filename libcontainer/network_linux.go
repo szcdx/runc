@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/types"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/types"
 	"github.com/vishvananda/netlink"
 )
 

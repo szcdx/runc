@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/devices"
+	"github.com/szcdx/runc/libcontainer/devices"
 )
 
 // deviceMeta is a Rule without the Allow or Permissions fields, and no

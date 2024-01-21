@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/fscommon"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/cgroups/fscommon"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 const (

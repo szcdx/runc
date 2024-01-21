@@ -10,12 +10,12 @@ import (
 	"golang.org/x/sys/unix"
 
 	//nolint:revive // Enable cgroup manager to manage devices
-	_ "github.com/opencontainers/runc/libcontainer/cgroups/devices"
-	"github.com/opencontainers/runc/libcontainer/cgroups/manager"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/configs/validate"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	_ "github.com/szcdx/runc/libcontainer/cgroups/devices"
+	"github.com/szcdx/runc/libcontainer/cgroups/manager"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/configs/validate"
+	"github.com/szcdx/runc/libcontainer/intelrdt"
+	"github.com/szcdx/runc/libcontainer/utils"
 )
 
 const (

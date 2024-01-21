@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/cgroups"
 )
 
 func statPSI(dirPath string, file string) (*cgroups.PSIStats, error) {

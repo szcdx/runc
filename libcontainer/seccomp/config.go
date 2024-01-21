@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 // flagTsync is recognized but ignored by runc, and it is not defined

@@ -15,11 +15,11 @@ import (
 	"github.com/urfave/cli"
 	"golang.org/x/sys/unix"
 
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/specconv"
-	"github.com/opencontainers/runc/libcontainer/system/kernelversion"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/szcdx/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/specconv"
+	"github.com/szcdx/runc/libcontainer/system/kernelversion"
+	"github.com/szcdx/runc/libcontainer/utils"
 )
 
 var errEmptyID = errors.New("container id cannot be empty")

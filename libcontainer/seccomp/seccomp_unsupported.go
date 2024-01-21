@@ -7,8 +7,8 @@ import (
 	"errors"
 	"os"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 var ErrSeccompNotEnabled = errors.New("seccomp: config provided but seccomp not supported")

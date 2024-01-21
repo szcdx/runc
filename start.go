@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opencontainers/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer"
 	"github.com/urfave/cli"
 )
 

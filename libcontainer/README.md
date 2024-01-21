@@ -1,6 +1,6 @@
 # libcontainer
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/opencontainers/runc/libcontainer.svg)](https://pkg.go.dev/github.com/opencontainers/runc/libcontainer)
+[![Go Reference](https://pkg.go.dev/badge/github.com/szcdx/runc/libcontainer.svg)](https://pkg.go.dev/github.com/szcdx/runc/libcontainer)
 
 Libcontainer provides a native Go implementation for creating containers
 with namespaces, cgroups, capabilities, and filesystem access controls.
@@ -21,11 +21,11 @@ arg "init", we call the first step process "bootstrap", so you always need a "in
 function as the entry of "bootstrap".
 
 In addition to the go init function the early stage bootstrap is handled by importing
-[nsenter](https://github.com/opencontainers/runc/blob/master/libcontainer/nsenter/README.md).
+[nsenter](https://github.com/szcdx/runc/blob/master/libcontainer/nsenter/README.md).
 
 For details on how runc implements such "init", see
-[init.go](https://github.com/opencontainers/runc/blob/master/init.go)
-and [libcontainer/init_linux.go](https://github.com/opencontainers/runc/blob/master/libcontainer/init_linux.go).
+[init.go](https://github.com/szcdx/runc/blob/master/init.go)
+and [libcontainer/init_linux.go](https://github.com/szcdx/runc/blob/master/libcontainer/init_linux.go).
 
 Then to create a container you first have to create a configuration
 struct describing how the container is to be created. A sample would look similar to this:

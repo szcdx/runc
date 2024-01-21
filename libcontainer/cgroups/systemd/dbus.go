@@ -57,7 +57,7 @@ func (d *dbusConnManager) getConnection() (*systemdDbus.Conn, error) {
 		// When dbus-user-session is not installed, we can't detect whether we should try to connect to user dbus or system dbus, so d.dbusRootless is set to false.
 		// This may fail with a cryptic error "read unix @->/run/systemd/private: read: connection reset by peer: unknown."
 		// https://github.com/moby/moby/issues/42793
-		return nil, fmt.Errorf("failed to connect to dbus (hint: for rootless containers, maybe you need to install dbus-user-session package, see https://github.com/opencontainers/runc/blob/master/docs/cgroup-v2.md): %w", err)
+		return nil, fmt.Errorf("failed to connect to dbus (hint: for rootless containers, maybe you need to install dbus-user-session package, see https://github.com/szcdx/runc/blob/master/docs/cgroup-v2.md): %w", err)
 	}
 	dbusC = conn
 	return conn, nil

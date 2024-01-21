@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer/userns"
 	"github.com/sirupsen/logrus"
+	"github.com/szcdx/runc/libcontainer/userns"
 	"golang.org/x/sys/unix"
 )
 

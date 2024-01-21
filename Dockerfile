@@ -57,9 +57,9 @@ ENV LD_LIBRARY_PATH=/opt/libseccomp/lib
 ENV PKG_CONFIG_PATH=/opt/libseccomp/lib/pkgconfig
 
 # Prevent the "fatal: detected dubious ownership in repository" git complain during build.
-RUN git config --global --add safe.directory /go/src/github.com/opencontainers/runc
+RUN git config --global --add safe.directory /go/src/github.com/szcdx/runc
 
-WORKDIR /go/src/github.com/opencontainers/runc
+WORKDIR /go/src/github.com/szcdx/runc
 
 # Fixup for cgroup v2.
 COPY script/prepare-cgroup-v2.sh /

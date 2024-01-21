@@ -75,7 +75,7 @@ function teardown() {
 	[ "$status" -eq 0 ]
 }
 
-# Issue fixed by https://github.com/opencontainers/runc/pull/3510.
+# Issue fixed by https://github.com/szcdx/runc/pull/3510.
 @test "userns with bind mount before a cgroupfs mount" {
 	# This can only be reproduced on cgroup v1 (and no cgroupns) due to the
 	# way it is mounted in such case (a bunch of of bind mounts).

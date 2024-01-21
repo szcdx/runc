@@ -13,7 +13,7 @@ Restores the container instance from a previously performed **runc checkpoint**.
 **--console-socket** _path_
 : Path to an **AF_UNIX**  socket which will receive a file descriptor
 referencing the master end of the console's pseudoterminal.  See
-[docs/terminals](https://github.com/opencontainers/runc/blob/master/docs/terminals.md).
+[docs/terminals](https://github.com/szcdx/runc/blob/master/docs/terminals.md).
 
 **--image-path** _path_
 : Set path to get criu image files to restore from.

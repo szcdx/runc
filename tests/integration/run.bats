@@ -77,7 +77,7 @@ function teardown() {
 	[[ "${lines[0]}" == *'mydomainname'* ]]
 }
 
-# https://github.com/opencontainers/runc/issues/3952
+# https://github.com/szcdx/runc/issues/3952
 @test "runc run with tmpfs" {
 	requires root
 
@@ -104,7 +104,7 @@ function teardown() {
 	[ "${lines[0]}" = "444" ]
 
 	# Run a 2nd time with the pre-existing directory.
-	# Ref: https://github.com/opencontainers/runc/issues/3911
+	# Ref: https://github.com/szcdx/runc/issues/3911
 	runc run test_tmpfs
 	[ "$status" -eq 0 ]
 	[ "${lines[0]}" = "444" ]

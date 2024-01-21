@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer"
 	"github.com/urfave/cli"
 
 	"golang.org/x/sys/unix"

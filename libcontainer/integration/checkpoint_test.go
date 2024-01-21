@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer"
 	"golang.org/x/sys/unix"
 )
 
@@ -63,7 +63,7 @@ func testCheckpoint(t *testing.T, userns bool) {
 		t.Skipf("criu binary not found: %v", err)
 	}
 
-	// Workaround for https://github.com/opencontainers/runc/issues/3532.
+	// Workaround for https://github.com/szcdx/runc/issues/3532.
 	out, err := exec.Command("rpm", "-q", "criu").CombinedOutput()
 	if err == nil && regexp.MustCompile(`^criu-3\.17-[123]\.el9`).Match(out) {
 		t.Skip("Test requires criu >= 3.17-4 on CentOS Stream 9.")

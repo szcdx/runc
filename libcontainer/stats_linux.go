@@ -1,9 +1,9 @@
 package libcontainer
 
 import (
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
-	"github.com/opencontainers/runc/types"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/intelrdt"
+	"github.com/szcdx/runc/types"
 )
 
 type Stats struct {

@@ -9,10 +9,10 @@ import (
 	"strconv"
 
 	criu "github.com/checkpoint-restore/go-criu/v6/rpc"
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/userns"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
+	"github.com/szcdx/runc/libcontainer"
+	"github.com/szcdx/runc/libcontainer/userns"
 	"github.com/urfave/cli"
 	"golang.org/x/sys/unix"
 )

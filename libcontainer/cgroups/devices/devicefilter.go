@@ -3,7 +3,7 @@
 // Based on https://github.com/containers/crun/blob/0.10.2/src/libcrun/ebpf.c
 //
 // Although ebpf.c is originally licensed under LGPL-3.0-or-later, the author (Giuseppe Scrivano)
-// agreed to relicense the file in Apache License 2.0: https://github.com/opencontainers/runc/issues/2144#issuecomment-543116397
+// agreed to relicense the file in Apache License 2.0: https://github.com/szcdx/runc/issues/2144#issuecomment-543116397
 package devices
 
 import (
@@ -13,7 +13,7 @@ import (
 	"strconv"
 
 	"github.com/cilium/ebpf/asm"
-	"github.com/opencontainers/runc/libcontainer/devices"
+	"github.com/szcdx/runc/libcontainer/devices"
 	"golang.org/x/sys/unix"
 )
 

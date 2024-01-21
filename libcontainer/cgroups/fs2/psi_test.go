@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/cgroups"
 )
 
 func TestStatCPUPSI(t *testing.T) {

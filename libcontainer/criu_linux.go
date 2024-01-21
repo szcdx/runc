@@ -21,9 +21,9 @@ import (
 	"golang.org/x/sys/unix"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/szcdx/runc/libcontainer/cgroups"
+	"github.com/szcdx/runc/libcontainer/configs"
+	"github.com/szcdx/runc/libcontainer/utils"
 )
 
 var criuFeatures *criurpc.CriuFeatures
@@ -622,7 +622,7 @@ func (c *Container) prepareCriuRestoreMounts(mounts []*configs.Mount) error {
 			// points for mounts in bind mounts.
 			// This also happens during initial container creation.
 			// Without this CRIU restore will fail
-			// See: https://github.com/opencontainers/runc/issues/2748
+			// See: https://github.com/szcdx/runc/issues/2748
 			// It is also not necessary to order the mount points
 			// because during initial container creation mounts are
 			// set up in the order they are configured.

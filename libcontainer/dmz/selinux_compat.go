@@ -3,8 +3,8 @@
 package dmz
 
 import (
-	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/opencontainers/selinux/go-selinux"
+	"github.com/szcdx/runc/libcontainer/configs"
 )
 
 // WorksWithSELinux tells whether runc-dmz can work with SELinux.

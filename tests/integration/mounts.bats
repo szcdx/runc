@@ -10,7 +10,7 @@ function teardown() {
 	teardown_bundle
 }
 
-# https://github.com/opencontainers/runc/security/advisories/GHSA-m8cg-xc2p-r3fc
+# https://github.com/szcdx/runc/security/advisories/GHSA-m8cg-xc2p-r3fc
 #
 # This needs to be placed at the top of the bats file to work around
 # a shellcheck bug. See <https://github.com/koalaman/shellcheck/issues/2873>.
@@ -127,7 +127,7 @@ function test_mount_order() {
 	[[ "$output" == *"a/x"* ]] # the final "file" was from a/x.
 }
 
-# https://github.com/opencontainers/runc/issues/3991
+# https://github.com/szcdx/runc/issues/3991
 @test "runc run [tmpcopyup]" {
 	mkdir -p rootfs/dir1/dir2
 	chmod 777 rootfs/dir1/dir2
@@ -158,7 +158,7 @@ function test_mount_order() {
 	[[ "${lines[0]}" == *'/tmp/bind/config.json'* ]]
 }
 
-# https://github.com/opencontainers/runc/issues/2246
+# https://github.com/szcdx/runc/issues/2246
 @test "runc run [ro tmpfs mount]" {
 	update_config '	  .mounts += [{
 					source: "tmpfs",
@@ -173,7 +173,7 @@ function test_mount_order() {
 	[[ "${lines[0]}" == *'ro,'* ]]
 }
 
-# https://github.com/opencontainers/runc/issues/3248
+# https://github.com/szcdx/runc/issues/3248
 @test "runc run [ro /dev mount]" {
 	update_config '   .mounts |= map((select(.destination == "/dev") | .options += ["ro"]) // .)
 			| .process.args |= ["grep", "^tmpfs /dev", "/proc/mounts"]'
@@ -183,7 +183,7 @@ function test_mount_order() {
 	[[ "${lines[0]}" == *'ro,'* ]]
 }
 
-# https://github.com/opencontainers/runc/issues/2683
+# https://github.com/szcdx/runc/issues/2683
 @test "runc run [tmpfs mount with absolute symlink]" {
 	# in container, /conf -> /real/conf
 	mkdir -p rootfs/real/conf
